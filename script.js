@@ -14,6 +14,8 @@ function updateCurrentTime() {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
     currentTimeDisplay.textContent = `Currents Time: ${hours}:${minutes}:${seconds}`;
+document.getElementById('currentTime').textContent = `${hours}:${minutes}:${seconds}`;
+    
 
     // Check if the current time matches the alarm time
     if (alarmTime && `${hours}:${minutes}` === alarmTime) {
