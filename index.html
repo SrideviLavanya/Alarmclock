@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock with Sound</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <div class="alarm-settings">
+            <label for="alarmTime">Set Alarm:</label>
+            <input type="time" id="alarmTime" required>
+            <button id="setAlarmBtn">Set Alarm</button>
+        </div>
+        <div id="currentTime" class="current-time">Current Time: --:--</div>
+        <div id="alarmStatus" class="alarm-status"></div>
+
+        <!-- Audio Element for Alarm Sound -->
+        <audio id="alarmSound" src="alarm-sound.mp3" preload="auto"></audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
