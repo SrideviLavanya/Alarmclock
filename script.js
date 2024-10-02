@@ -28,6 +28,9 @@ function triggerAlarm() {
     // Show browser notification
     if (Notification.permission === "granted") {
         new Notification("Alarm", { body: "Wake up! It's time!" });
+
+alarmSound.play(); 
+        
     }
 
     // Clear the alarm
